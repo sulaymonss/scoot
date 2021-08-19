@@ -1,0 +1,84 @@
+.info{
+    margin-top: 200px;
+    &__wrapper-1{
+        position: relative;
+        background-image: url(../img/oval-right.svg);
+        background-repeat: no-repeat;
+        background-position: right center; 
+        margin-bottom: 150px;
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    }
+    &__wrapper-2{
+        position: relative;
+        background-image: url(../img/oval-left.svg);
+        background-repeat: no-repeat;
+        background-position: left center; 
+        margin-bottom: 150px;
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            flex-direction: row-reverse;
+        }
+    }
+    &__wrapper-3{
+        overflow: hidden;
+        position: relative;
+        background-image: url(../img/oval-right.svg);
+        background-repeat: no-repeat;
+        background-position: right center; 
+        margin-bottom: 300px;
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    }
+    &__right{
+        width: 48%;
+        &-path1{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            min-width: 734px;
+        }
+        &-path2{
+            position: absolute;
+            left: -380px;
+            min-width: 734px;
+        }
+        &-path3{
+            position: absolute;
+            right: -380px;
+            top: 85px;
+            min-width: 734px;
+        }
+    }
+    &__item{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__left{
+        width: 48%;
+        &-title{
+            @extend %title-md;
+            margin-bottom: 24px;
+        }
+        &-text{
+            @extend %text;
+            margin-bottom: 40px;
+        }
+    }
+    &__money-img{
+        border-radius: 50%;
+    }
+}

@@ -1,0 +1,323 @@
+@media(max-width:1050px){
+    .intro{
+        &::before{
+            display: none;
+        }
+        .container{
+            &::after{
+                left: 440px;
+            }
+        }
+        &__text{
+            margin-left: 0;
+        }
+        &__btn{
+            margin-left: 0;
+        }
+    }
+}
+
+@media(max-width:1005px){
+    .info{
+        margin-top: 90px;
+        .container{
+            text-align: center;
+            flex-direction: column-reverse;
+        }
+        &__left{
+            width: 100%;
+            margin-top: 60px;
+        }
+        &__wrapper-1{
+            background-position: top right;
+            margin-bottom: 120px;
+        }
+        &__wrapper-2{
+            background-position: top left;
+            margin-bottom: 120px;
+        }
+        &__wrapper-3{
+            background-position: top right;
+            margin-bottom: 100px;
+        }
+        &__right{
+            width: 100%;
+            &-path1{
+                position: absolute;
+                right: 0;
+                bottom: 50%;
+            }
+        }
+    }
+}
+
+@media(max-width:905px){
+    .intro{
+        .container{
+            text-align: center;
+            padding-top: 130px;
+            &::after{
+                top: 76%;
+                left: -150px;
+            }
+        }
+        &__title{
+            width: 70%;
+            margin: auto;
+            margin-bottom: 24px;
+        }
+        &__text{
+            width: 80%;
+            margin: auto;
+            margin-bottom: 32px;
+        }
+    }
+    .process{
+        margin-top: 120px;
+        &::before{
+            content: "";
+            width: 15px;
+            height: 100%;
+            background-color: #E5ECF4;
+            position: absolute;
+            top: -120px;
+            left: 9%;
+        }
+        &__item{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            &-title{
+                margin-top: 0;
+            }
+            &-wrapper{
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media(max-width:870px){
+    .sign{
+        .container{
+            padding-top: 62px;
+            flex-direction: column;
+            text-align: center;
+        }
+        &__title{
+            width: 70%;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media(max-width:760px){
+    .info{
+        overflow: hidden;
+        &__right{
+            &-path1{
+                right: -390px;
+            }
+        }
+    }
+    .process::before{
+        left: 10%;
+    }
+}
+
+@media(max-width:680px){
+    .header{
+        .nav{
+            &__list{
+                margin-left: 30px;
+            }
+        }
+    }
+}
+@media(max-width:650px){
+    .header{
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        .nav{
+            padding: 22px 0;
+            &__logo{
+                position: absolute;
+                left: 50%;
+                margin-left: -38px;
+            }
+            &__list{
+                position: fixed;
+                display: block;
+                background-color: #333A44;
+                width: 75%;
+                top: 67px;
+                bottom: 0;
+                left: -80%;
+                padding-left: 32px;
+                padding-top: 64px;
+                margin-left: 0;
+                transition: .3s ease;
+            }
+            &__item:not(:first-child){
+                margin-left: 0px;
+            }
+            &__item:not(:last-child){
+                margin-bottom: 24px;
+            }
+            &__btn-wrapper{
+                left: 32px;
+                bottom: 24px;
+            }
+            &__link{
+                font-size: 18px;
+                color: $white;
+            }
+        }
+    }
+    #sign-1{
+        display: block;
+    }
+    #check:checked ~ .nav__list{
+        left: 0;
+    }
+    #check:checked ~ .label #sign-1{
+        display: none;
+    }
+    #check:checked ~ .label #sign-2{
+        display: block;
+    }
+    .intro{
+        &__title{
+            width: 100%;
+            font-size: 40px;
+            line-height: 40px;
+        }
+        &__text{
+            width: 100%;
+        }
+    }
+    .info{
+        &__wrapper-1{
+            background-image: none;
+        }
+        &__wrapper-2{
+            background-image: none;
+        }
+        &__wrapper-3{
+            background-image: none;
+        }
+        &__left-title{
+            font-size: 32px;
+            line-height: 32px;
+        }
+    }
+    .process{
+        &::before{
+            display: none;
+        }
+        &__item{
+            flex-direction: column;
+            text-align: center;
+            &-title{
+                margin-top: 24px;
+                font-size: 20px;
+            }
+            &-wrapper{
+                width: 80%;
+            }
+        }
+    }
+    .sign{
+        &__title{
+            width: 100%;
+            font-size: 32px;
+            line-height: 32px;
+        }
+    }
+    .footer{
+        padding: 64px 0;
+        &__nav{
+            flex-direction: column;
+            text-align: center;
+        }
+        &__list{
+            flex-direction: column;
+            margin-left: 0;
+            margin-top: 40px;
+        }
+        &__item{
+            margin-right: 0;
+            margin-bottom: 16px;
+        }
+        &__media{
+            margin-top: 70px;
+            margin-left: 0;
+        }
+    }
+}
+
+@media(max-width:420px){
+    .intro{
+        background-image: url(../img/intro-bg-mob.png);
+        .container{
+            &::after{
+                top: 75%;
+                left: -320px;
+            }
+        }
+    }
+    .process__item-wrapper{
+        width: 100%;
+    }
+    .info{
+        &__right{
+            &-path1{
+                bottom: 65%;
+            }
+            &-path2{
+                left: -520px;
+            }
+            &-path3{
+                right: -520px;
+                top: 85px;
+            }
+        }
+    }
+    .sign{
+        &__link img{
+            height: 40px;
+        }
+        &__link:first-child{
+            margin-right: 8px;
+        }
+    }
+}
+
+@media(max-width:380px){
+    .header{
+        .nav__logo{
+            width: 76px;
+        }
+    }
+    .info{
+        &__right{
+            &-path1{
+                right: -480px;
+                bottom: 60%;
+            }
+        }
+    }
+}
+@media(max-width:320px){
+    .header{
+        .nav{
+            &__btn{
+                padding: 10px 20px
+            }
+        }
+    }
+}
+

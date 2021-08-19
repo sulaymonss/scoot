@@ -1,0 +1,41 @@
+.footer{
+    background-color: #333A44;
+    padding: 33px 0;
+    &__nav{
+        display: flex;
+        align-items: center;
+    }
+    &__list{
+        display: flex;
+        margin-left: 58px;
+    }
+    &__item{
+        margin-right: 32px;
+    }
+    &__link{
+        font-family: $font-1;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 25px;
+        color: $dim-grey;
+        transition: .3s ease;
+        &:hover{
+            color: $yellow;
+        }
+    }
+    &__media{
+        margin-left: auto;
+        &-link{
+            margin-right: 24px;
+            font-size: 24px;
+            color: $yellow;
+            transition: .3s ease;
+            &:hover{
+                color: $light-grey;
+            }
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+}

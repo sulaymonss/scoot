@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+h1,h2,h3,h4{
+    font-family: $font-1;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn{
+    display: inline-block;
+    font-family: $font-1;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+    color: $white;
+    background-color: $yellow;
+    padding: 14px 39px;
+    border: 3px solid $yellow;
+    transition: .3s ease all;
+    &:hover{
+        background-color: $white;
+        color: $yellow;
+    }
+}

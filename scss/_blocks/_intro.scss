@@ -1,0 +1,49 @@
+.intro{
+    position: relative;
+    background-image: url(../img/intro-bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    height: 650px;
+    &::before{
+        content: "";
+        width: 190px;
+        height: 15px;
+        background-image: url(/img/intro-path-1.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 398px;
+    }
+    .container{
+        position: relative;
+        padding: 153px 10px;
+        &::after{
+            content: "";
+            width: 447px;
+            height: 138px;
+            background-image: url(/img/intro-path-2.svg);
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 340px;
+            left: 570px;
+        }
+    }
+    &__title{
+        @extend %title-lg;
+        width: 500px;
+        margin-bottom: 40px;
+    }
+    &__text{
+        @extend %text;
+        color: $white;
+        width: 405px;
+        margin-bottom: 40px;
+        margin-left: 125px;
+    }
+    &__btn{
+        margin-left: 125px;
+        &:hover{
+            background-color: transparent;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.sign{
+    height: 300px;
+    background-image: url(../img/sign-bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    .container{
+        padding-top: 102px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__title{
+        @extend %title-md;
+        color: $white;
+        width: 415px;
+    }
+    &__link:first-child{
+        margin-right: 18px;
+    }
+}

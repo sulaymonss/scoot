@@ -1,0 +1,46 @@
+// colors:
+$yellow:  #FCB72B;
+$dark-navy: #495567;
+$dim-grey: #939CAA;
+$light-grey: #E5ECF4;
+$snow:  #F2F5F9;
+$light-yellow: #FFF4DF;
+$white: #FFFFFF;
+
+// fonts:
+$font-1: 'Space Mono', 'Arial', sans-serif;
+$font-2: 'Lexend Deca', 'Arial', sans-serif; 
+
+// general styles:
+%title-lg{
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+    color: $white;
+}
+
+%title-md{
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: $dark-navy;
+}
+
+%title-sm{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07143px;
+    color: $dark-navy;
+}
+
+%text{
+    font-family: $font-2;
+    font-size: 15px;
+    line-height: 25px;
+    color: $dim-grey;
+}
+
+

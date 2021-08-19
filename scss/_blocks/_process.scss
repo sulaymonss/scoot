@@ -1,0 +1,40 @@
+.process{
+    position: relative;
+    margin-top: 160px;
+    &::before{
+        content: "";
+        width: 68%;
+        height: 15px;
+        background-color: #E5ECF4;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        z-index: -1;
+    }
+    &__title{
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+    }
+    &__list{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__item{
+        width: 350 * 100% / 1110;
+        &-title{
+            @extend %title-sm;
+            margin-top: 40px;
+            margin-bottom: 27px;
+        }
+        &-text{
+            @extend %text;
+        }
+    }
+}
